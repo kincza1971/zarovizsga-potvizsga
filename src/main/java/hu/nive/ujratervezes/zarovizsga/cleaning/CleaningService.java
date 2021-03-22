@@ -51,7 +51,7 @@ public class CleaningService {
         for (Cleanable cleanable : cleanables) {
             result.append(cleanable.getAddress()).append(", ");
         }
-        return result.substring(0,result.length()-2).toString();
+        return result.substring(0,result.length()-2);
     }
 
     public List<Cleanable> getCleanables() {
